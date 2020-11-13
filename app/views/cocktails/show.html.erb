@@ -1,4 +1,7 @@
 <h2 class="heading"><%= @cocktail.name %></h1>
+<div class="img-cocktail-lg">
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
 
 <div class="container-ingredients">
 <% @cocktail.doses.each do |dose| %>
