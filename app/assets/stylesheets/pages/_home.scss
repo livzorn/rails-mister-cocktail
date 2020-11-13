@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+.container {
+  width: 900px;
+  display: flex;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.card-cocktail {
+  padding: 16px;
+  border-radius: 10px;
+  width: 250px;
+  background-color: white;
+  margin: 16px;
+  height: 350px;
+}
+
+.img-cocktail {
+  height: 275px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

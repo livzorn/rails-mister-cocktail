@@ -1,0 +1,17 @@
+.container-ingredients {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  width: 500px;
+  margin: 60px auto;
+  padding: 24px;
+  border-radius: 10px;
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-sixe: 24px;
+  }
+}
+
+.ingredient-contents {
+  display: flex;
+  justify-content: space-between;
+}

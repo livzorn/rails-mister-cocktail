@@ -6,12 +6,20 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rammetto+One&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar">
+      <h1>Mixed by Mom Zorn</h1>
+      <div class="nav-links">
+        <p><%= link_to "Mom's cocktails", cocktails_path %></p>
+        <p><%= link_to "Mix your own", new_cocktail_path %></p>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

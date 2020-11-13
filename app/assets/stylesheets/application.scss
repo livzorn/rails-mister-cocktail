@@ -11,3 +11,61 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  color: white;
+  text-align: center;
+
+  // background-image: url(https://images.unsplash.com/photo-1567671823828-4272a32ef644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1146&q=80);
+  // background-image: url(https://images.unsplash.com/photo-1531002423613-b7d0e005770b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  // background-image: url(https://images.unsplash.com/photo-1497990902153-c6d041aad676?ixlib=rb-1.2.1&auto=format&fit=crop&w=1614&q=80);
+  // background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.0) 100%), url(https://images.unsplash.com/photo-1585621386284-99ba80a164fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+  // background-image: url(https://images.unsplash.com/photo-1563556812243-f444d076caf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  background-image: url(https://images.unsplash.com/photo-1562860352-76f581e6392d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1655&q=80);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  text-shadow: 2px 2px black;
+}
+
+.heading {
+  margin-top: 60px;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 16px 32px;
+  a {
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+  }
+}
+
+.nav-links {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+

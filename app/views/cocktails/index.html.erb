@@ -1,7 +1,16 @@
-<h1>Cocktails</h1>
+<div class="heading">
+<h2>Pick your poison!</h2>
+</div>
 
+<div class="container">
 <% @cocktails.each do |cocktail| %>
-  <h3><%= link_to cocktail.name, cocktail_path(cocktail.id) %></h3>
+  <div class="card-cocktail gallery">
+    <div class="img-cocktail">
+      <img src="https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005.jpg" alt="cocktail">
+    </div>
+    <h3><%= link_to cocktail.name, cocktail_path(cocktail.id) %></h3>
+  </div>
 <% end %>
+</div>
 
-<%= link_to "Add a cocktail", new_cocktail_path %>
+
