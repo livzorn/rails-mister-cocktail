@@ -6,4 +6,7 @@ Rails.application.routes.draw do
     resources :doses, only: %i[create new]
   end
   resources :doses, only: [:destroy]
+
+  get '/home', to: 'pages#home'
+  get '/mix', to: 'pages#admin'
 end
