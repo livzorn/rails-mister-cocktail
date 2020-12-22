@@ -23,8 +23,10 @@
       <h1>Mixed by Mom Zorn</h1>
       <!-- <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/14925313_10209688999235516_7181153747923635371_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=NAQ5JcHTugIAX-hSp4X&_nc_ht=scontent-lht6-1.xx&oh=e51059fd0d2a00db964ef2bf60aa2ad4&oe=5FD43172" alt="" class="avatar" width="50px" height="50px"> -->
       <div class="nav-links">
-        <p><%= link_to "Mom's cocktails", cocktails_path %></p>
-        <p><%= link_to "Mix your own", new_cocktail_path %></p>
+        <p><%= link_to "Karen's cocktails", cocktails_path %></p>
+        <% if current_user.email == kzorn@longy.edu %>
+          <p><%= link_to "Mix your own", new_cocktail_path %></p>
+        <% end %>
       </div>
     </div>
     <%= yield %>
