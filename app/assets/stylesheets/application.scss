@@ -49,23 +49,5 @@ h2 {
   margin-top: 60px;
 }
 
-.navbar {
-  justify-content: space-between;
-  padding: 16px 32px;
-  a {
-    color: white;
-    font-size: 24px;
-    font-weight: 550;
-  }
-}
 
-.nav-links {
-  display: flex;
-  width: 350px;
-  justify-content: space-between;
-}
-
-.navbar .navbar-collapse {
-  flex-grow: 0;
-}
 

@@ -3,6 +3,12 @@ class PagesController < ApplicationController
 
   def home
     @cocktails = Cocktail.all
+    if current_user
+      current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
+    end
+  end
+
+  def about
   end
 
   def admin
