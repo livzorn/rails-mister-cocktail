@@ -1,6 +1,6 @@
 <div class="container-show">
   <div>
-    <h2 class="heading"><%= @cocktail.name %></h1>
+    <h2 class="heading"><%= @cocktail.name %></h2>
     <div class="img-cocktail-lg">
       <%= cl_image_tag @cocktail.photo.key, height: 400, width: 300, crop: :fill if @cocktail.photo.attached?%>
     </div>
@@ -20,6 +20,7 @@
     <div class="links">
       <p><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail.id) %></p>
       <p><%= link_to "Back to cocktails", root_path %></p>
+      <img class="avatar" src="https://images.unsplash.com/photo-1601876819102-99560f772713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
     </div>
   </div>
 </div>
