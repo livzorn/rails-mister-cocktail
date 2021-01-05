@@ -2,7 +2,7 @@
   padding: 16px;
   border-radius: 10px;
   width: 250px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 16px;
   height: 350px;
   img {
@@ -14,11 +14,6 @@
   h3 {
     margin-top: 11px;
   }
-}
-
-a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 .card-cocktail { transition: all .2s ease-in-out; }
