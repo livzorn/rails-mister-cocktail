@@ -1,0 +1,25 @@
+.card-cocktail {
+  padding: 16px;
+  border-radius: 10px;
+  width: 250px;
+  background-color: white;
+  margin: 16px;
+  height: 350px;
+  img {
+    height: 275px;
+    width: 218px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  h3 {
+    margin-top: 11px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card-cocktail { transition: all .2s ease-in-out; }
+.card-cocktail:hover { transform: scale(1.05); }

@@ -3,12 +3,14 @@
 </div>
 
 <div class="container">
-<% @cocktails.each do |cocktail| %>
-  <div class="card-cocktail gallery">
-    <div class="img-cocktail">
-      <img src="https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005.jpg" alt="cocktail">
-    </div>
-    <h3><%= link_to cocktail.name, cocktail_path(cocktail.id) %></h3>
-  </div>
-<% end %>
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail_path(cocktail.id) do %>
+      <div class="card-cocktail gallery">
+        <div class="img-cocktail">
+           <%= cl_image_tag cocktail.photo.key, crop: :fill if cocktail.photo.attached? %>
+        </div>
+        <h3><%= cocktail.name %></h3>
+      </div>
+    <% end %>
+  <% end %>
 </div>
