@@ -1,8 +1,6 @@
-<div class="heading">
-<h2>Pick your poison!</h2>
-</div>
+<h2 class="heading">Pick your poison!</h2>
 
-<div class="container">
+<div class="container-cocktails">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail.id) do %>
       <div class="card-cocktail gallery">

@@ -1,7 +1,13 @@
-// Specific CSS for your home-page
-.container {
+.container-cocktails {
   width: 900px;
   display: flex;
   margin-top: 24px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.heading {
+  margin-top: 20px;
 }
