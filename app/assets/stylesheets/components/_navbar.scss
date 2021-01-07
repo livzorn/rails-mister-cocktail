@@ -8,21 +8,15 @@
 
 .nav-content {
   display: flex;
-  width: 300px;
-  justify-content: space-between;
-  margin-right: 20px;
 }
 
 a.nav-link {
   color: white;
   font-size: 24px;
   font-weight: 550;
+  margin-right: 24px;
 }
 
 .navbar .navbar-collapse {
   flex-grow: 0;
-}
-
-.admin-link {
-  margin-right: 40px;
 }
