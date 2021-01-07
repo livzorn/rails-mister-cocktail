@@ -1,27 +1,31 @@
+<h2 class="heading text-center"><%= @cocktail.name %></h2>
+
 <div class="container-show">
-  <div>
-    <h2 class="heading"><%= @cocktail.name %></h2>
-    <div class="img-cocktail-lg">
-      <%= cl_image_tag @cocktail.photo.key, height: 400, width: 300, crop: :fill if @cocktail.photo.attached?%>
-    </div>
+
+  <div class="img-cocktail-lg">
+    <%= cl_image_tag @cocktail.photo.key, height: 400, width: 300, crop: :fill if @cocktail.photo.attached?%>
   </div>
 
   <div class="container-ingredients">
-    <% @cocktail.doses.each do |dose| %>
-      <div class="ingredient-contents">
+
+    <div class="ingredient-contents">
+
+      <% @cocktail.doses.each do |dose| %>
         <h3><%= dose.ingredient.name %></h3>
         <p><%= dose.description %></p>
         <p><%= link_to "Remove",
                       dose_path(dose),
                       method: :delete,
                       data: { confirm: "Are you sure?" } %></p>
-      </div>
-    <% end %>
-    <div class="links">
-      <% if @admin %>
-        <p><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail.id) %></p>
       <% end %>
-      <p><%= link_to "Back to cocktails", root_path %></p>
+
+      <div class="links">
+        <% if @admin %>
+          <p class="btn-add"><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail.id) %></p>
+        <% end %>
+        <p class="btn-back"><%= link_to "back", root_path %></p>
+      </div>
+
     </div>
   </div>
 </div>
