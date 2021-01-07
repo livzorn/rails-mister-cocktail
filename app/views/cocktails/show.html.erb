@@ -13,10 +13,12 @@
       <% @cocktail.doses.each do |dose| %>
         <h3><%= dose.ingredient.name %></h3>
         <p><%= dose.description %></p>
-        <p><%= link_to "Remove",
-                      dose_path(dose),
-                      method: :delete,
-                      data: { confirm: "Are you sure?" } %></p>
+        <% if @admin %>
+          <p><%= link_to "Remove",
+                        dose_path(dose),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" } %></p>
+        <% end %>
       <% end %>
 
       <div class="links">
