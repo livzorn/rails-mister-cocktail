@@ -2,17 +2,21 @@
   justify-content: space-between;
   padding: 16px 32px;
   a {
-    color: white;
-    font-size: 24px;
-    font-weight: 550;
+
   }
 }
 
-.nav-links {
+.nav-content {
   display: flex;
-  width: 250px;
+  width: 300px;
   justify-content: space-between;
-  margin-right: 40px;
+  margin-right: 20px;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 24px;
+  font-weight: 550;
 }
 
 .navbar .navbar-collapse {
