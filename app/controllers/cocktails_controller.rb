@@ -10,7 +10,7 @@ class CocktailsController < ApplicationController
     if @cocktail.save
       redirect_to cocktail_path(@cocktail.id)
     else
-      render :new
+      redirect_to mix_path
     end
   end
 
