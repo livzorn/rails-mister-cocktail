@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
 
   resources :cocktails, only: %i[index create new show] do
-    resources :doses, only: %i[create new]
+    resources :doses, only: %i[new create]
   end
+  resources :ingredients, only: %i[new create destroy]
   resources :doses, only: [:destroy]
 
   get '/home', to: 'pages#home'
