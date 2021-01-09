@@ -1,11 +1,17 @@
 .btn-add {
   position: absolute;
-  top: 16px;
+  bottom: 20px;
   right: 24px;
+  font-size: 20px;
 }
 
 .btn-back {
   position: absolute;
-  bottom: 0px;
-  right: 24px;
+  bottom: 16px;
+  left: 24px;
+  font-size: 20px;
+}
+
+.btn-remove {
+  font-size: 14px;
 }
