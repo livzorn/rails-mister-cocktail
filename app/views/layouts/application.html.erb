@@ -24,7 +24,7 @@
       <!-- <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/14925313_10209688999235516_7181153747923635371_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=NAQ5JcHTugIAX-hSp4X&_nc_ht=scontent-lht6-1.xx&oh=e51059fd0d2a00db964ef2bf60aa2ad4&oe=5FD43172" alt="" class="avatar" width="50px" height="50px"> -->
       <div class="nav-content">
         <% if @admin == true %>
-          <p><%= link_to "Mix it up", new_cocktail_path, class: "nav-link" %></p>
+          <p><%= link_to "Mix it up", mix_path, class: "nav-link" %></p>
         <% end %>
         <p><%= link_to "Cocktails", root_path, class: "nav-link"%></p>
         <p><%= link_to "About", about_path, class: "nav-link" %></p>
