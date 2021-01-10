@@ -17,11 +17,9 @@ class PagesController < ApplicationController
   def admin
     @cocktail = Cocktail.new
     @ingredient = Ingredient.new
-  end
-
-  def show
-    @cocktail = Cocktail.find(params[:id])
-    @dose = Dose.new
+    if current_user
+      current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
+    end
   end
 
   def review
