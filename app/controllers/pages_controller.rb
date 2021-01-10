@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   end
 
   def about
+    if current_user
+      current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
+    end
   end
 
   def admin

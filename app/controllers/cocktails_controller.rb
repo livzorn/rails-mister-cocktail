@@ -23,6 +23,7 @@ class CocktailsController < ApplicationController
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
+    @dose = Dose.new
   end
 
   private
