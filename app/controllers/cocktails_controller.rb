@@ -20,6 +20,7 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
+    @dose = Dose.new
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
