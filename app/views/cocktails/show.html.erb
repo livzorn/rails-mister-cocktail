@@ -45,7 +45,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="container-form">
+        <div class="form-modal">
           <%= simple_form_for [ @cocktail, @dose ] do |f| %>
             <%= f.association :ingredient, as: :select%>
             <%= f.input :description %>

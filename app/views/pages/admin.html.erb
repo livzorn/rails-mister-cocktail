@@ -1,19 +1,28 @@
-<h2 class="heading">New cocktail</h1>
+<div class="container-mix d-flex justify-content-around">
 
-<div class="container-form">
-  <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit class: "btn btn-primary" %>
-  <% end %>
+  <div>
+    <h2 class="heading">New cocktail</h2>
+    <div class="container-form">
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="heading">Update your pantry</h2>
+    <div class="container-form">
+      <%= simple_form_for @ingredient do |f| %>
+        <%= f.input :name %>
+        <%= f.submit class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+
 </div>
 
-<h2 class="heading">Update your pantry</h1>
 
-<div class="container-form">
-  <%= simple_form_for @ingredient do |f| %>
-    <%= f.input :name %>
-    <%= f.submit class: "btn btn-primary" %>
-  <% end %>
-</div>
+
 
