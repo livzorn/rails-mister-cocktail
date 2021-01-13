@@ -1,8 +1,8 @@
 .container-about {
   display: flex;
+  justify-content: space-around;
   img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 300px;
+    margin: 20px 50px auto auto;
   }
 }
