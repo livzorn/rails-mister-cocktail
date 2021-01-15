@@ -10,21 +10,25 @@
   }
 }
 
-.container-cards {
-  height: 310px;
-  margin-top: 40px;
-  margin-left: 50px;
-  display: flex;
-  justify-content: center;
-  padding: 36px;
-  background-color: rgba(255,255,255,0.9);
-
-}
-
 .about-karen {
   width: 300px;
 }
 
 .about-olivia {
   width: 290px;
+}
+
+.text-about {
+  color: black;
+  text-align: left;
+  h3 {
+    font-size: 24px;
+    font-family: 'Rammetto One', cursive;
+  }
+  p {
+    font-size: 14px;
+    margin: 0 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
 }
