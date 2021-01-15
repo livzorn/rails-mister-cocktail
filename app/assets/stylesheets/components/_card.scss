@@ -2,7 +2,7 @@
   padding: 16px;
   border-radius: 10px;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 16px;
   height: 350px;
   img {
@@ -18,3 +18,11 @@
 
 .card-cocktail { transition: all .2s ease-in-out; }
 .card-cocktail:hover { transform: scale(1.05); }
+
+.card-about {
+  width: 500px;
+  height: 400px;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 50px;
+}

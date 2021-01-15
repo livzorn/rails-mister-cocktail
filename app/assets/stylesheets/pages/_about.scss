@@ -1,8 +1,10 @@
 .container-about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
   img {
     width: 300px;
-    margin: 20px 50px auto auto;
+    margin: 60px auto auto auto;
   }
 }
