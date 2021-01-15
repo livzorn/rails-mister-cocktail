@@ -21,8 +21,17 @@
 
 .card-about {
   width: 500px;
-  height: 400px;
+  // height: 500px;
   border-radius: 4px;
   background-color: rgba(255,255,255,0.8);
   margin-top: 50px;
+  color: black;
+  text-align: left;
+  padding: 32px;
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    margin-left: 16px;
+  }
 }
