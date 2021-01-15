@@ -1,10 +1,30 @@
 .container-about {
+  margin-top: 60px;
   display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 0 auto;
+  justify-content: center;
+  // width: 1000px;
+  // margin: 0 auto;
   img {
-    width: 350px;
-    margin: 60px auto auto auto;
+    width: 400px;
+    height: 400px;
   }
+}
+
+.container-cards {
+  height: 310px;
+  margin-top: 40px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  background-color: rgba(255,255,255,0.9);
+
+}
+
+.about-karen {
+  width: 300px;
+}
+
+.about-olivia {
+  width: 290px;
 }

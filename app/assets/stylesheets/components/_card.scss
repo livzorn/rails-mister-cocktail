@@ -20,18 +20,22 @@
 .card-cocktail:hover { transform: scale(1.05); }
 
 .card-about {
-  width: 500px;
-  // height: 500px;
-  border-radius: 4px;
-  background-color: rgba(255,255,255,0.8);
-  margin-top: 50px;
+  // background-color: rgba(0,0,0,0.6);
   color: black;
+  // color: white;
   text-align: left;
-  padding: 32px;
   h3 {
     font-size: 24px;
+    // font-family: 'Abril Fatface', cursive;
+    font-family: 'Rammetto One', cursive;
   }
   p {
+    font-size: 14px;
     margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+    // text-shadow: 1px 1px 1px #111111;
   }
 }
