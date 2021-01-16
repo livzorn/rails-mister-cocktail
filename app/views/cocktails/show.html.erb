@@ -8,29 +8,30 @@
 
   <div class="container-ingredients">
 
-    <div class="ingredient-contents">
-
-      <% @cocktail.doses.each do |dose| %>
+    <% @cocktail.doses.each do |dose| %>
+      <div class="ingredient-contents">
         <h3><%= dose.ingredient.name %></h3>
-        <p><%= dose.description %></p>
-        <% if @admin %>
-          <%= link_to dose_path(dose),
-            method: :delete,
-            data: { confirm: "Are you sure?" } do %>
-            <i class="fas fa-minus-circle btn-remove"></i>
+        <div class="ingredients-right">
+          <p><%= dose.description %></p>
+          <% if @admin %>
+            <%= link_to dose_path(dose),
+              method: :delete,
+              data: { confirm: "Are you sure?" } do %>
+              <i class="fas fa-minus-circle btn-remove"></i>
+
+            <% end %>
           <% end %>
-                        </p>
-        <% end %>
-      <% end %>
-
-      <div class="links">
-        <% if @admin %>
-          <i class="fas fa-plus-circle btn-add" type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>
-        <% end %>
-        <%= link_to "back", root_path, class: "btn-back" %>
+        </div>
       </div>
+    <% end %>
 
+    <div class="links">
+      <% if @admin %>
+        <i class="fas fa-plus-circle btn-add" type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>
+      <% end %>
+      <%= link_to "back", root_path, class: "btn-back" %>
     </div>
+
   </div>
 </div>
 
@@ -39,7 +40,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLongTitle">Add a dose!</h5>
+        <h3 class="modal-title text-center" id="exampleModalLongTitle">Add a dose!</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -47,9 +48,11 @@
       <div class="modal-body">
         <div class="form-modal">
           <%= simple_form_for [ @cocktail, @dose ] do |f| %>
-            <%= f.association :ingredient, as: :select%>
-            <%= f.input :description %>
-            <%= f.submit class: "btn btn-primary" %>
+            <div class="text-left mt-3">
+              <%= f.association :ingredient, as: :select%>
+              <%= f.input :description, label: "Amount" %>
+            </div>
+            <%= f.submit class: "btn btn-dark mt-3 mb-3" %>
           <% end %>
         </div>
       </div>

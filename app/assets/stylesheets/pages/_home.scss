@@ -1,13 +1,19 @@
 .container-cocktails {
-  width: 900px;
+  width: 85vw;
   display: flex;
-  margin-top: 24px;
-  flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: center;
+  margin: 24px auto 50px;
+  flex-wrap: wrap;
   overflow: scroll;
+  h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+  }
 }
 
 .heading {
   margin-top: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
 }
