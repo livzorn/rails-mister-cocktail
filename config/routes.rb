@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/about', to: 'pages#about'
 
-  resources :cocktails, only: %i[index create new show] do
+  resources :cocktails do
     resources :doses, only: %i[new create]
   end
   resources :ingredients, only: %i[new create destroy]

@@ -18,10 +18,12 @@
               method: :delete,
               data: { confirm: "Are you sure?" } do %>
               <i class="fas fa-minus-circle btn-remove"></i>
-
             <% end %>
           <% end %>
         </div>
+        <% if @cocktail.notes %>
+          <p>Method: <%= @cocktail.notes %> </p>
+        <% end %>
       </div>
     <% end %>
 
