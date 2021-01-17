@@ -36,12 +36,9 @@ class CocktailsController < ApplicationController
   end
 
   def update
-    @cocktail = Cocktail.new(strong_params)
-    if @cocktail.save
-      redirect_to cocktail_path(@cocktail.id)
-    else
-      redirect_to mix_path
-    end
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.update(strong_params)
+    redirect_to cocktail_path(@cocktail.id)
   end
 
   private
