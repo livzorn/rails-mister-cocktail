@@ -24,11 +24,26 @@ class CocktailsController < ApplicationController
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
+    if @cocktail.notes.nil?
+      @btn_method = "add method"
+    else
+      @btn_method = "edit method"
+    end
+  end
+
+  def edit
+    @cocktail = Cocktail.find(params[:id])
+  end
+
+  def update
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.update(strong_params)
+    redirect_to cocktail_path(@cocktail.id)
   end
 
   private
 
   def strong_params
-    params.require(:cocktail).permit(:name, :photo)
+    params.require(:cocktail).permit(:name, :photo, :notes)
   end
 end

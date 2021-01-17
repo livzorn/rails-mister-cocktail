@@ -18,12 +18,20 @@
               method: :delete,
               data: { confirm: "Are you sure?" } do %>
               <i class="fas fa-minus-circle btn-remove"></i>
-
             <% end %>
           <% end %>
         </div>
       </div>
     <% end %>
+
+    <div class="container-method">
+      <% if @cocktail.notes %>
+        <h4><%= @cocktail.notes %></h4>
+      <% end %>
+      <% if @admin %>
+        <p class="btn-method" type="button" data-toggle="modal" data-target="#exampleModalCenter2"><%= @btn_method %></p>
+      <% end %>
+    </div>
 
     <div class="links">
       <% if @admin %>
@@ -59,3 +67,27 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-center" id="exampleModalLongTitle2">How do you make it?</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-modal">
+          <%= simple_form_for @cocktail do |f| %>
+            <div class="text-left">
+              <%= f.input :notes, label: "Method" %>
+            </div>
+            <%= f.submit class: "btn btn-dark mt-3" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
