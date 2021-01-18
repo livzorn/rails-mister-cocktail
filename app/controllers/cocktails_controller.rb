@@ -5,6 +5,10 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
 
+  def new
+    @cocktail = Cocktail.new
+  end
+
   def create
     @cocktail = Cocktail.new(strong_params)
     if @cocktail.save
@@ -14,21 +18,13 @@ class CocktailsController < ApplicationController
     end
   end
 
-  def new
-    @cocktail = Cocktail.new
-  end
-
   def show
     @cocktail = Cocktail.find(params[:id])
     @dose = Dose.new
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
-    if @cocktail.notes.nil?
-      @btn_method = "add method"
-    else
-      @btn_method = "edit method"
-    end
+    @cocktail.notes.nil? || @cocktail.notes.empty? ? @btn_method = "+ add method" : @btn_method = "edit method"
   end
 
   def edit

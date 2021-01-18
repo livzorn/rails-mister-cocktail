@@ -1,25 +1,23 @@
 .card-cocktail {
+  background: linear-gradient(360deg, #FFFFFF 5%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.130143) 29.13%, rgba(255, 255, 255, 0) 36.73%);
   padding-bottom: 16px;
   border-radius: 4px;
-  // border-bottom-left-radius: 40px;
-  // border-bottom-right-radius: 40px;
   width: 250px;
-  // background-color: rgba(255, 255, 255, 0.5);
-  color: white;
+  color: black;
   margin: 24px;
   height: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
   img {
-    height: 295px;
+    height: 300px;
     width: 250px;
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
   h3 {
-    margin-top: 16px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7)
-    // background-color: white;
-    // padding: 12px;
+    font-family: 'Rammetto One', cursive;
+    margin-top: 14px;
+    font-size: 20px;
   }
 }
 
@@ -41,4 +39,5 @@
   background: white;
   padding-bottom: 32px;
   border-radius: 4px;
+  position: relative;
 }

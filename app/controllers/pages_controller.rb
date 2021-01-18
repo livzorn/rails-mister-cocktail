@@ -14,13 +14,12 @@ class PagesController < ApplicationController
     end
   end
 
-  def admin
+  def mix
     @cocktail = Cocktail.new
     @ingredient = Ingredient.new
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
-    @cocktail.notes ? @btn_method = "Edit method" : @btn_method = "Add method"
   end
 
   def review
