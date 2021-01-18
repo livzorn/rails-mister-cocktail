@@ -24,11 +24,7 @@ class CocktailsController < ApplicationController
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
-    if @cocktail.notes.nil?
-      @btn_method = "add method"
-    else
-      @btn_method = "edit method"
-    end
+    @cocktail.notes.empty? ? @btn_method = "+ add method" : @btn_method = "edit method"
   end
 
   def edit

@@ -20,7 +20,6 @@ class PagesController < ApplicationController
     if current_user
       current_user.email == 'kzorn@longy.edu' ? @admin = true : @admin = false
     end
-    @cocktail.notes ? @btn_method = "Edit method" : @btn_method = "Add method"
   end
 
   def review
