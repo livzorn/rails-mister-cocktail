@@ -1,5 +1,3 @@
-<!-- <h2 class="heading">Pick your poison!</h2> -->
-
 <div class="container-cocktails">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail.id) do %>
@@ -7,7 +5,10 @@
         <div class="img-cocktail">
            <%= cl_image_tag cocktail.photo.key, crop: :fill if cocktail.photo.attached? %>
         </div>
-        <h3><%= cocktail.name %></h3>
+        <div class="cocktail-name">
+          <h3><%= cocktail.name %></h3>
+          <div class="white-underline"></div>
+        </div>
       </div>
     <% end %>
   <% end %>
