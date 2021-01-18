@@ -28,10 +28,16 @@
 
 .img-pantry {
   height: 180px;
-  width: 30vw;
+  width: 425px;
   object-fit: cover;
 }
 
 #cocktail_photo {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 940px) {
+  .container-mix {
+    flex-direction: column;
+  }
 }
