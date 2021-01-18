@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   // background: white;
-  width: 75vw;
+  width: 90vw;
   // height: 70vh;
   margin: 40px auto auto;
   color: black;
@@ -36,8 +36,15 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 960px) {
   .container-mix {
     flex-direction: column;
+    justify-content: center;
+  }
+  .card-mix {
+    margin: 0 auto;
+  }
+  .card-mix-left {
+    margin-bottom: 48px;
   }
 }
