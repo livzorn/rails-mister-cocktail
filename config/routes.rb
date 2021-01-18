@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resources :doses, only: [:destroy]
 
   get '/home', to: 'pages#home'
-  get '/mix', to: 'pages#admin'
+  get '/mix', to: 'pages#mix'
 end

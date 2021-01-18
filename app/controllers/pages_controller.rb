@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     end
   end
 
-  def admin
+  def mix
     @cocktail = Cocktail.new
     @ingredient = Ingredient.new
     if current_user
