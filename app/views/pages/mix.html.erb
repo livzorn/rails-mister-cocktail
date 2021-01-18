@@ -2,20 +2,20 @@
 
   <div class="card-mix">
     <%= image_tag "pantry.jpg", alt: "alttext", class: "img-pantry" %>
-    <h3 class="heading mt-5">Expand your pantry</h3>
+    <h3 class="heading mt-4">Expand your pantry</h3>
     <div class="container-form">
       <%= simple_form_for @ingredient do |f| %>
-        <div class="text-left mt-3">
+        <div class="text-left mt-5">
           <%= f.input :name %>
         </div>
-        <%= f.submit class: "btn btn-dark mt-4" %>
+        <%= f.submit class: "btn btn-dark btn-mix mt-5" %>
       <% end %>
     </div>
   </div>
 
   <div class="card-mix">
     <%= image_tag "shaker.jpeg", alt: "alttext", class: "img-pantry" %>
-    <h3 class="heading">New cocktail</h3>
+    <h3 class="mt-4">New cocktail</h3>
     <div class="container-form">
       <%= simple_form_for @cocktail do |f| %>
         <div class="text-left">

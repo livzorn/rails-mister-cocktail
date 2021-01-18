@@ -37,7 +37,7 @@
       <% if @cocktail.notes %>
         <h4><%= @cocktail.notes %></h4>
       <% end %>
-      <% if @admin %>
+      <% if @admin && @cocktail.doses.any? %>
         <p class="btn-method" type="button" data-toggle="modal" data-target="#exampleModalCenter2"><%= @btn_method %></p>
       <% end %>
     </div>

@@ -5,6 +5,10 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
 
+  def new
+    @cocktail = Cocktail.new
+  end
+
   def create
     @cocktail = Cocktail.new(strong_params)
     if @cocktail.save
@@ -12,10 +16,6 @@ class CocktailsController < ApplicationController
     else
       redirect_to mix_path
     end
-  end
-
-  def new
-    @cocktail = Cocktail.new
   end
 
   def show
