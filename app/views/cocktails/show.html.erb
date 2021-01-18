@@ -1,4 +1,13 @@
-<h2 class="heading text-center"><%= @cocktail.name %></h2>
+<div class="container-title">
+  <h2 class="heading text-center"><%= @cocktail.name %></h2>
+  <% if @admin %>
+    <%= link_to cocktail_path(@cocktail),
+        method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+      <i class="fas fa-trash-alt"></i>
+    <% end %>
+  <% end %>
+</div>
 
 <div class="container-show">
 
