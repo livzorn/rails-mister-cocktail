@@ -66,7 +66,7 @@
         <div class="form-modal">
           <%= simple_form_for [ @cocktail, @dose ] do |f| %>
             <div class="text-left mt-3">
-              <%= f.association :ingredient, as: :select%>
+              <%= f.association :ingredient, collection: Ingredient.order('name ASC') %>
               <%= f.input :description, label: "Amount" %>
             </div>
             <%= f.submit class: "btn btn-dark mt-3 mb-3" %>
