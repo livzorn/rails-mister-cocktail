@@ -66,5 +66,9 @@
     margin-left: 24px;
     margin-top: 10px;
     color: white;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1.0;
+    }
   }
 }
