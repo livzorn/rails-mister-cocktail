@@ -30,12 +30,16 @@ a.nav-link {
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 36px;
+  .navbar h1 {
+    font-size: 30px;
+    margin: 0 auto;
   }
   a.nav-link {
     font-size: 18px;
     margin-right: 16px;
+  }
+  .nav-content i {
+    font-size: 22px;
   }
   .nav-content {
     margin: 0 auto;
@@ -46,5 +50,8 @@ a.nav-link {
   a.nav-link {
     font-size: 14px;
     margin-right: 10px;
+  }
+  .nav-content i {
+    font-size: 16px;
   }
 }

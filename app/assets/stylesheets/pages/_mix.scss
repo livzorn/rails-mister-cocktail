@@ -36,15 +36,29 @@
   font-size: 16px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container-mix {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .container-mix {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 80px;
   }
   .card-mix {
     margin: 0 auto;
   }
   .card-mix-left {
     margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card-mix {
+    width: 90vw;
   }
 }
