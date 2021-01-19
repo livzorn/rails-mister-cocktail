@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   // background: white;
-  width: 75vw;
+  width: 90vw;
   // height: 70vh;
   margin: 40px auto auto;
   color: black;
@@ -28,10 +28,23 @@
 
 .img-pantry {
   height: 180px;
-  width: 30vw;
+  width: 425px;
   object-fit: cover;
 }
 
 #cocktail_photo {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 960px) {
+  .container-mix {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-mix {
+    margin: 0 auto;
+  }
+  .card-mix-left {
+    margin-bottom: 48px;
+  }
 }

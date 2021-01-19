@@ -28,3 +28,11 @@ a.nav-link {
   font-family: 'Rammetto One', cursive;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 594px) {
+  a.nav-link {
+    font-size: 18px;
+    margin-right: 16px;
+  }
+}
+
