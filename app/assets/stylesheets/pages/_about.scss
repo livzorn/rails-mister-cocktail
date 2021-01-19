@@ -46,6 +46,9 @@
 }
 
 @media only screen and (max-width: 785px) {
+  .container-about {
+    margin-top: 0;
+  }
   .card-about {
     width: 90vw;
     height: auto;
@@ -56,7 +59,7 @@
   .card-about {
     flex-direction: column;
     width: 380px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
   .about-olivia {
     margin-left: 0;
