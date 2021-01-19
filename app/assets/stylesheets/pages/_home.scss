@@ -6,3 +6,9 @@
   overflow: scroll;
   justify-content: center;
 }
+
+@media only screen and (max-width: 620px) {
+  .container-cocktails {
+    margin-top: 0;
+  }
+}
