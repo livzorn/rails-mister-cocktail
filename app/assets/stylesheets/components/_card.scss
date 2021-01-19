@@ -1,5 +1,4 @@
 .card-cocktail {
-  background: linear-gradient(360deg, #FFFFFF 5%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.130143) 29.13%, rgba(255, 255, 255, 0) 36.73%);
   padding-bottom: 16px;
   border-radius: 4px;
   width: 250px;
@@ -14,12 +13,19 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
+}
+
+.cocktail-name {
+  margin-top: 0;
+  height: 50px;
+  background: linear-gradient(360deg, #FFFFFF 20%, rgba(255, 255, 255, 0.7) 100%);
   h3 {
     font-family: 'Rammetto One', cursive;
-    margin-top: 14px;
+    padding-top: 14px;
     font-size: 20px;
   }
 }
+
 
 .card-cocktail { transition: all .2s ease-in-out; }
 .card-cocktail:hover { transform: scale(1.05); }

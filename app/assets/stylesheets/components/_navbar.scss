@@ -36,3 +36,9 @@ a.nav-link {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  a.nav-link {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
