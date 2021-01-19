@@ -46,6 +46,11 @@
   padding-bottom: 32px;
   border-radius: 4px;
   position: relative;
+  .img-pantry {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .card-mix-left {
