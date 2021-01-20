@@ -38,13 +38,13 @@
         <h4><%= @cocktail.notes %></h4>
       <% end %>
       <% if @admin && @cocktail.doses.any? %>
-        <p class="btn-method" type="button" data-toggle="modal" data-target="#exampleModalCenter2"><%= @btn_method %></p>
+        <p class="btn-method" data-toggle="modal" data-target="#exampleModalCenter2"><%= @btn_method %></p>
       <% end %>
     </div>
 
     <div class="links">
       <% if @admin %>
-        <i class="fas fa-plus-circle btn-add" type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>
+        <i class="fas fa-plus-circle btn-add" data-toggle="modal" data-target="#exampleModalCenter"></i>
       <% end %>
       <%= link_to "back", root_path, class: "btn-back" %>
     </div>
