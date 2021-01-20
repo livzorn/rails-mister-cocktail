@@ -38,3 +38,12 @@
   font-size: 32px;
   margin-top: 6px;
 }
+
+@media only screen and (max-width: 450px) {
+  .btn-method {
+    background-color: transparent;
+  }
+  .btn-add {
+    background-color: transparent;
+  }
+}
