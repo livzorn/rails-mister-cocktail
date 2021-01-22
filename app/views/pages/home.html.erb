@@ -1,3 +1,5 @@
+<%= content_for :meta_description, "Cocktails" %>
+
 <div class="container-cocktails">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail.id) do %>
